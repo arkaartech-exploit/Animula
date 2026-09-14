@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="_ds/organic-5a1a97b4-7877-462c-8337-6d2acf025cf9/styles.css" />
+<script src="_ds/organic-5a1a97b4-7877-462c-8337-6d2acf025cf9/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<style>
+  body { margin: 0; background: #131110; color: #f0e6d8; font-family: var(--font-body); text-wrap: pretty; overflow-x: clip; }
+  a { color: #f6a06b; text-decoration: none; }
+  a:hover { color: #ffc6a5; }
+  ::selection { background: rgba(246,160,107,0.3); }
+  @keyframes drift-a { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(6vw,-4vh,0) scale(1.18); } }
+  @keyframes drift-b { 0%,100% { transform: translate3d(0,0,0) scale(1.1); } 50% { transform: translate3d(-7vw,5vh,0) scale(0.9); } }
+  @keyframes drift-c { 0%,100% { transform: translate3d(0,0,0) scale(0.95); } 50% { transform: translate3d(4vw,6vh,0) scale(1.25); } }
+  @keyframes pulse-ring { 0% { transform: scale(0.6); opacity: 0.9; } 100% { transform: scale(2.4); opacity: 0; } }
+  [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity 900ms cubic-bezier(.2,.7,.3,1), transform 900ms cubic-bezier(.2,.7,.3,1); }
+  [data-reveal][data-shown] { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1; transform: none; transition: none; }
+    [data-drift] { animation: none !important; }
+  }
+</style>
+</helmet>
+
+<div style="position:relative; min-height:100vh; background:#131110; overflow-x:clip">
+
+  <div aria-hidden="true" style="position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden">
+    <div data-drift="" style="position:absolute; top:-18vh; left:-22vw; width:78vw; height:78vw; max-width:620px; max-height:620px; border-radius:50%; background:radial-gradient(circle at 35% 35%, rgba(198,113,57,0.55), rgba(198,113,57,0) 68%); filter:blur(28px); animation:drift-a 26s ease-in-out infinite"></div>
+    <div data-drift="" style="position:absolute; top:22vh; right:-28vw; width:82vw; height:82vw; max-width:660px; max-height:660px; border-radius:50%; background:radial-gradient(circle at 60% 40%, rgba(122,138,94,0.45), rgba(122,138,94,0) 70%); filter:blur(32px); animation:drift-b 34s ease-in-out infinite"></div>
+    <div data-drift="" style="position:absolute; bottom:-24vh; left:8vw; width:70vw; height:70vw; max-width:560px; max-height:560px; border-radius:50%; background:radial-gradient(circle at 50% 50%, rgba(100,51,18,0.5), rgba(100,51,18,0) 72%); filter:blur(30px); animation:drift-c 30s ease-in-out infinite"></div>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%, rgba(19,17,16,0) 0%, rgba(19,17,16,0.65) 60%, #131110 100%)"></div>
+  </div>
+
+  <div style="position:relative; z-index:1; width:100%; max-width:760px; margin:0 auto; padding:0 22px 0; box-sizing:border-box">
+
+    <header style="display:flex; align-items:center; gap:14px; padding:18px 18px 18px 20px; margin-top:18px; border:1px solid rgba(240,230,216,0.13); background:rgba(30,26,23,0.62); backdrop-filter:blur(14px); border-radius:999px">
+      <span style="position:relative; display:grid; place-items:center; flex:none; width:34px; height:34px; border-radius:50%; background:rgba(246,160,107,0.14); color:#f6a06b">
+        <span aria-hidden="true" style="position:absolute; inset:0; border-radius:50%; border:1px solid rgba(246,160,107,0.5); animation:pulse-ring 2.8s ease-out infinite"></span>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"></path></svg>
+      </span>
+      <span style="display:flex; flex-direction:column; gap:2px; min-width:0">
+        <span style="font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#aebf92">Etiqueta activada</span>
+        <span style="font-size:13.5px; line-height:1.35; color:rgba(240,230,216,0.92)">Has desbloqueado la esencia de <em style="font-style:italic; color:#f6a06b">{{ artworkTitle }}</em></span>
+      </span>
+    </header>
+
+    <section data-reveal="" style="padding:88px 0 96px; text-align:left">
+      <p style="margin:0 0 26px; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(240,230,216,0.5)">Pintura abstracta · Obra única</p>
+      <h1 style="font-family:var(--font-heading); font-weight:400; font-size:clamp(56px,17vw,116px); line-height:0.92; letter-spacing:-0.03em; margin:0 0 34px; color:#f5ece0">Anímula</h1>
+      <p style="margin:0 0 30px; max-width:22ch; font-size:clamp(23px,6.6vw,34px); line-height:1.34; font-style:italic; font-weight:300; color:#f0e6d8">“El color no describe lo que vi. Describe lo que quedó de mí después de verlo.”</p>
+      <p style="margin:0; max-width:34ch; font-size:14px; line-height:1.7; color:rgba(240,230,216,0.6)">Esta obra respira contigo. Bájala despacio: hay una voz, un origen y una música detrás de cada capa.</p>
+      <div style="display:flex; align-items:center; gap:10px; margin-top:44px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(240,230,216,0.45)">
+        <span>Desliza</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+      </div>
+    </section>
+
+    <section data-reveal="" style="padding:0 0 96px">
+      <figure style="margin:0; border-radius:32px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,0.5)">
+        <image-slot id="animula-artwork" shape="rect" src="assets/photo.jpg" style="display:block; width:100%; aspect-ratio:4/5" role="img" aria-label="La obra que acabas de escanear"></image-slot>
+      </figure>
+      <figcaption style="margin-top:16px; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,230,216,0.45)">{{ artworkTitle }} · Óleo y pigmento sobre lino · 120 × 90 cm</figcaption>
+    </section>
+
+    <section data-reveal="" style="padding:0 0 96px">
+      <p style="margin:0 0 22px; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:#aebf92">Semblanza</p>
+      <h2 style="font-family:var(--font-heading); font-weight:400; font-size:clamp(30px,8.4vw,44px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 26px; color:#f5ece0">Pintar lo que no <br />se deja nombrar</h2>
+      <div style="display:flex; flex-direction:column; gap:20px; max-width:48ch; font-size:16px; line-height:1.78; color:rgba(240,230,216,0.78)">
+        <p style="margin:0">Anímula trabaja desde el gesto: capas de óleo, pigmento seco y silencio que se acumulan hasta que una forma decide aparecer. No hay bocetos. Hay escucha.</p>
+        <p style="margin:0">Su obra parte de estados interiores —la espera, el duelo suave, la euforia breve— y los traduce a un campo de color donde el espectador puede perderse sin instrucciones. Lo abstracto, para ella, no es ausencia de tema: es un tema demasiado grande para caber en una figura.</p>
+        <p style="margin:0">Cada pieza se termina cuando deja de pedir algo. Después vive en una casa, en una pared, y sigue cambiando con la luz de quien la mira.</p>
+      </div>
+    </section>
+
+    <section data-reveal="" style="padding:0 0 96px">
+      <p style="margin:0 0 22px; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:#aebf92">Inspiraciones sonoras</p>
+      <h2 style="font-family:var(--font-heading); font-weight:400; font-size:clamp(30px,8.4vw,44px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 16px; color:#f5ece0">La música que <br />pintó contigo</h2>
+      <p style="margin:0 0 34px; max-width:40ch; font-size:15px; line-height:1.7; color:rgba(240,230,216,0.6)">Estas canciones sonaron en el estudio mientras esta obra tomaba forma. Escúchalas frente a ella.</p>
+
+      <div style="display:grid; grid-template-columns:1fr; gap:14px">
+        <sc-for list="{{ tracks }}" as="t" hint-placeholder-count="3">
+          <a href="{{ t.href }}" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:16px; padding:16px 18px; border-radius:22px; border:1px solid rgba(240,230,216,0.11); background:rgba(30,26,23,0.55); backdrop-filter:blur(10px); color:inherit; transition:background 300ms ease, border-color 300ms ease, transform 300ms ease" style-hover="background:rgba(45,38,33,0.8); border-color:rgba(246,160,107,0.45); transform:translateY(-2px)">
+            <span style="display:grid; place-items:center; flex:none; width:46px; height:46px; border-radius:50%; background:{{ t.tint }}; color:#131110">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.75" stroke-linejoin="round"><path d="m6 3 14 9-14 9Z"></path></svg>
+            </span>
+            <span style="display:flex; flex-direction:column; gap:4px; min-width:0; flex:1">
+              <span style="font-size:16px; line-height:1.3; color:#f5ece0">{{ t.title }}</span>
+              <span style="font-size:13px; line-height:1.3; color:rgba(240,230,216,0.55)">{{ t.artist }}</span>
+            </span>
+            <span style="flex:none; display:flex; align-items:center; gap:8px; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#f6a06b">
+              <span>Oír</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+
+      <div style="margin-top:26px; padding:18px; border-radius:26px; border:1px solid rgba(240,230,216,0.11); background:rgba(30,26,23,0.55)">
+        <p style="margin:0 0 14px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(240,230,216,0.5)">Pieza central</p>
+        <iframe title="Reproductor de Spotify" src="https://open.spotify.com/embed/search/results/Love%20Talisco?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius:16px; border:0; display:block"></iframe>
+      </div>
+    </section>
+
+    <section data-reveal="" style="padding:0 0 88px">
+      <blockquote style="margin:0; padding:38px 30px; border-radius:32px; background:linear-gradient(150deg, rgba(198,113,57,0.16), rgba(122,138,94,0.12)); border:1px solid rgba(240,230,216,0.1); font-size:clamp(20px,5.6vw,26px); line-height:1.45; font-style:italic; font-weight:300; color:#f5ece0">“Si te quedas un minuto más del que crees necesario, la pintura empieza a hablar.”</blockquote>
+      <p style="margin:18px 0 0; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(240,230,216,0.45)">— Anímula, cuaderno de estudio</p>
+    </section>
+
+    <footer data-reveal="" style="padding:0 0 56px; border-top:1px solid rgba(240,230,216,0.1)">
+      <p style="margin:34px 0 24px; font-family:var(--font-heading); font-weight:400; font-size:26px; letter-spacing:-0.02em; color:#f5ece0">Anímula</p>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:32px">
+        <a href="https://instagram.com/animula.rtt_" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; padding:12px 20px; min-height:44px; box-sizing:border-box; border-radius:999px; border:1px solid rgba(240,230,216,0.16); font-size:13.5px; color:rgba(240,230,216,0.9); transition:background 300ms ease, border-color 300ms ease" style-hover="background:rgba(246,160,107,0.12); border-color:rgba(246,160,107,0.5); color:#ffc6a5">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="#portfolio" style="display:inline-flex; align-items:center; gap:10px; padding:12px 20px; min-height:44px; box-sizing:border-box; border-radius:999px; border:1px solid rgba(240,230,216,0.16); font-size:13.5px; color:rgba(240,230,216,0.9); transition:background 300ms ease, border-color 300ms ease" style-hover="background:rgba(174,191,146,0.14); border-color:rgba(174,191,146,0.5); color:#ccdbb2">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+          <span>Portafolio</span>
+        </a>
+        <a href="mailto:animula.ink@gmail.com" style="display:inline-flex; align-items:center; gap:10px; padding:12px 20px; min-height:44px; box-sizing:border-box; border-radius:999px; border:1px solid rgba(240,230,216,0.16); font-size:13.5px; color:rgba(240,230,216,0.9); transition:background 300ms ease, border-color 300ms ease" style-hover="background:rgba(246,160,107,0.12); border-color:rgba(246,160,107,0.5); color:#ffc6a5">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          <span>Contacto</span>
+        </a>
+      </div>
+      <p style="margin:0; font-size:11.5px; line-height:1.7; color:rgba(240,230,216,0.4)">© 2026 Anímula · Obra original, certificado en la etiqueta de esta pieza</p>
+    </footer>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;artworkTitle&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Vestigio VII&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;tracks&quot;:{&quot;editor&quot;:null,&quot;default&quot;:null,&quot;tsType&quot;:&quot;{title:string;artist:string;href:string;tint:string}[]&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.setAttribute('data-shown', ''); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+      el.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+      io.observe(el);
+    });
+    this._io = io;
+  }
+  componentWillUnmount() { if (this._io) this._io.disconnect(); }
+  renderVals() {
+    const tracks = this.props.tracks ?? [
+      { title: 'Love', artist: 'Talisco', href: 'https://open.spotify.com/search/Love%20Talisco', tint: '#f6a06b' },
+      { title: 'An Ending (Ascent)', artist: 'Brian Eno', href: 'https://open.spotify.com/search/An%20Ending%20Ascent%20Brian%20Eno', tint: '#aebf92' },
+      { title: 'Avril 14th', artist: 'Aphex Twin', href: 'https://open.spotify.com/search/Avril%2014th%20Aphex%20Twin', tint: '#ffc6a5' },
+      { title: 'Nude', artist: 'Radiohead', href: 'https://open.spotify.com/search/Nude%20Radiohead', tint: '#ccdbb2' }
+    ];
+    return { artworkTitle: this.props.artworkTitle ?? 'Vestigio VII', tracks };
+  }
+}
+
+</script>
+</body>
+</html>
